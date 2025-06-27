@@ -4620,7 +4620,7 @@ void fg_bat_ZCV_int_handler(void)
 #endif
 
 
-static int battery_meter_probe(struct platform_device *dev)
+static int __init battery_meter_probe(struct platform_device *dev)
 {
 	int ret_device_file = 0;
 	const char *fg_swocv_v = NULL;

@@ -1506,7 +1506,7 @@ static struct platform_driver dram_test_drv = {
 		},
 };
 
-static int dram_dt_init(void)
+static int __init dram_dt_init(void)
 {
 	int ret = 0;
 	struct device_node *node = NULL;

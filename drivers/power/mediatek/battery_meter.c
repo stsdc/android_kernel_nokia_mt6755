@@ -4227,7 +4227,7 @@ static DEVICE_ATTR(FG_g_fg_dbg_percentage_voltmode, 0664, show_FG_g_fg_dbg_perce
 		   store_FG_g_fg_dbg_percentage_voltmode);
 
 /* ============================================================ // */
-static int battery_meter_probe(struct platform_device *dev)
+static int __init battery_meter_probe(struct platform_device *dev)
 {
 	int ret_device_file = 0;
 #if defined(CONFIG_MTK_KERNEL_POWER_OFF_CHARGING)

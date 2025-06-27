@@ -3099,7 +3099,7 @@ static void init_meter_global_data(struct platform_device *dev)
 	g_tracking_point = p_bat_meter_data->cust_tracking_point;
 }
 
-static int battery_meter_probe(struct platform_device *dev)
+static int __init battery_meter_probe(struct platform_device *dev)
 {
 	int ret_device_file = 0;
 

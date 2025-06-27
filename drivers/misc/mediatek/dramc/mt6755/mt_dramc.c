@@ -1479,7 +1479,7 @@ late_initcall(last_dramc_test_agent_init);
 
 
 
-static int dram_dt_init(void)
+static int __init dram_dt_init(void)
 {
 	int ret = 0;
 	struct device_node *node = NULL;
